@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+body{
+    Overflow-x : hidden;
+}
+
+/*Background image*/
+
+.paymentcontainer{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./oceancopy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.payementlogo{
+    width: 60%;
+    height: 60%;
+}
+
+/*Nav Bar*/
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+    padding: 10px;
+
+}
+nav ul{
+    position: absolute;
+    top: 0%;
+    left: 28%;
+    list-style-type: none;
+    margin-top: 42px;
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 9px 12px;
+    transition: 0.6s ease;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width:700px)
+{
+    nav ul 
+    {
+        top: 10%;
+ 
+    }
+}
+
+@media screen and (max-width:610px)
+{
+     nav ul li
+    {
+        padding: 12px;
+    }
+}
+.title5
+{
+    position: absolute;
+    top: 65%;
+    color: white;
+    margin-left: 100px;
+    left: -2%;
+ 
+}
+
+.p3{
+    font-size: 50px;
+}
+
+.buttonticket
+    {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+
+ }
+
+ @media screen and (max-width:610px)
+{
+    .title5 .p3
+    {
+        margin-top:20px;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:610px)
+{
+    .ticketlogo{
+        margin-top:-5px;
+    }
+}
+    
+ .btn6:hover
+ {
+ background-color: white;
+ color: black;
+ 
+ }
+
+ .buttonticket:hover
+ {
+ background-color: white;
+ color: black;
+ 
+ }
+
+ 
+
+ .bookticket
+ {
+     margin-top: 20px;
+ }
+ .bookticket nav a
+ {
+    
+     color: gray;
+     text-decoration: none;
+     background: rgba(60, 154, 163, 0.493);
+     border-radius: 25px;
+     align-items: center;
+     padding: 10px 10px;
+     display: inline-block; 
+    
+ }
+
+ @media screen and (max-width:700px)
+{
+    .bookticket nav a
+    {
+        margin-left: -12%;
+       
+    }
+}
+
+ .bookticket nav{
+    margin-left:35%;
+}
+
+ .bookticket nav a:hover{
+    background-color: rgb(163, 196, 207);
+    color: black;
+ }
+
+ .sectionkosgoda
+ {
+     font-weight:500;
+     text-align:center;
+     font-family:Arial, Helvetica, sans-serif;
+     margin-top:5%;
+     color:black;
+     text-align: center;
+     align-items: center;
+     background-image: linear-gradient(135deg,rgb(0, 170, 255),rgb(239, 239, 84));
+     padding: 10px;
+     border-radius: 20px;
+     margin-top: 50px;
+     margin-bottom: 10px;
+ }
+
+ /*FORM*/
+ 
+.container{
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    margin: -10px;
+}
+
+
+.container form{
+    background: #d9cfcf;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 20px;
+    margin: -25px;
+    
+}
+
+.container form .inputBox{
+    margin-top: 20px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width:700px)
+{
+    .container form
+    {
+        width: 100%;
+       
+    }
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+
+.container .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.container .card-container .front .flexbox{
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+
+.container .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+    text-decoration: none;
+}
+
+
+
+ form button:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+/*Footer*/
+
+.foot_t
+{
+    color: white;
+    font-size:1.5em;
+    text-align: center;
+}
+
+footer .footercategories4
+{
+    background: linear-gradient(to right, #4da6da, #053751);
+    width: 1442px;
+    margin-left: -1%;
+    height: 20vh;
+    border-top-left-radius: 200px;
+    position: absolute;  
+    bottom: -130%;
+}
+
+.title_f
+{
+    color:white;
+    margin-left: 71%;
+    
+}
+
+
+.footerbottom{
+    background-color:#2de1de;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+    color: white;
+}
+
+
+ .btn7
+    {
+     background: #141a34;
+     color: #fff;
+     border-radius: 4px;
+     border: 1px solid rgba(255, 255, 255, 0.7);
+     padding: 10px 40px;
+     outline: 0;
+     cursor: pointer;
+     display: block;
+     margin: 30px auto 10px;
+     left: 5%;
+     width: 30%;
+     border-radius: 25px;
+     text-decoration: none;
+     
+    }
+
+.btn7:hover
+ {
+    letter-spacing: 2px;
+    opacity: .8;
+
+ }
+
+ @media screen and(max-width:610px)
+{
+    .foot_t
+    {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:610px)
+{
+    footer .footercategories4
+    {
+        width: 120%;
+        bottom: -130%;
+    }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="./tickets.css">
+</head>
+<body class="dark">
+
+    <div class="ticketcontainer">
+
+
+    <!-----Navigation Bar----->
+    <nav class="ticketnav">
+        <nav class="ticketnav">
+        <a href="index.html"><img src="./logo.png" class="ticketlogo" alt="Logo"></a><ul>
+            <li> <a href="./index.html">Home</a></li>
+            <li> <a href="./categories.html"> Turtle Category</a></li>
+            <li> <a href="./Hikkaduwa.html"> Hikkaduwa Turtle Hatchery </a></li>
+            <li> <a href="./threats.html">Threats To Turtles</a></li>
+            <li> <a href="./other.html">Other Turtle Hetcheries </a></li>
+            <li> <a href="./purchase.html"> Purchase and Donate</a></li>
+              
+              
+       </ul>
+     </nav>
+    </div>
+
+    <!--Title-->
+    <div class="title5">
+        <h2 class="p3">Book Your Tickets</h2>
+    </div>
+
+    <section class="bookticket">
+        <nav class="bookticket">
+            <a href="./Tickets.html">Ticket</a>&nbsp; &nbsp; &nbsp; 
+            <a href="./details.html" class="active">Details</a>&nbsp; &nbsp;  &nbsp; 
+            <a href="./payment.html" >Payment</a>&nbsp; &nbsp;  
+            <a href="./confirmation.html">Confirmation</a>&nbsp; &nbsp; 
+        </nav>
+    </section>
+
+    <div class="sectiontwo">
+        <h2 class="sectionkosgoda">
+            Purchase Your Tickets Now
+        </h2>
+<br>
+<br>
+    
+  
+<div class="calendar">
+  <div class="header">
+    <button id="prevBtn">&lt;</button>
+    <h2 id="monthYear"></h2>
+    <button id="nextBtn">&gt;</button>
+  </div>
+  <div class="days">
+    <div>Sun</div>
+    <div>Mon</div>
+    <div>Tue</div>
+    <div>Wed</div>
+    <div>Thu</div>
+    <div>Fri</div>
+    <div>Sat</div>
+  </div>
+  <div class="dates"></div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+
+  <!-----Guest Select----->
+      
+      <section class="guest-container">
+    <div class="guest-type">
+        
+<div class="sl-adult">
+    <h3>SL&nbsp;ADULT</h3>
+    <div class="add-sub">
+    <span class="minus">-</span>
+    <span class="num">01</span>
+    <span class="plus">+</span>
+</div>
+</div>
+
+            <div class="sl-adult">
+                <h3>SL&nbsp;CHILD</h3>
+                <div class="add-sub">
+                <span class="minusa">-</span>
+                <span class="numa">01</span>
+                <span class="plusa">+</span>
+            </div>
+            </div>
+
+            <div class="sl-adult">
+                <h3>FOREIGNER&nbsp;ADULT</h3>
+                <div class="add-sub">
+                <span class="minusb">-</span>
+                <span class="numb">01</span>
+                <span class="plusb">+</span>
+            </div>
+            </div>
+
+            <div class="sl-adult">
+                <h3>FOREIGNER&nbsp;CHILD</h3>
+                <div class="add-sub">
+                <span class="minusc">-</span>
+                <span class="numc">01</span>
+                <span class="plusc">+</span>
+            </div>
+            </div>
+
+            <div class="sl-adult">
+                <h3>INFANT</h3>
+                <div class="add-sub">
+                <span class="minusd">-</span>
+                <span class="numd">01</span>
+                <span class="plusd">+</span>
+            </div>
+            </div>
+    </div>
+  </section>
+
+   
+
+        <!-----Duration/guest----->
+
+        <div class="container">
+            <h1>Visitor Charges</h1>
+            <table>
+              <tr>
+                <th>Category</th>
+                <th>Hour Type</th>
+                <th>Charge (USD)</th>
+              </tr>
+              <tr>
+                <td>Foreigner Adult</td>
+                <td>Normal hour</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Foreigner Adult</td>
+                <td>Peak hour</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Foreigner Child</td>
+                <td>Normal hour</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Foreigner Child</td>
+                <td>Peak hour</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>SL Adult</td>
+                <td>Normal hour</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>SL Adult</td>
+                <td>Peak hour</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>SL Child</td>
+                <td>Normal hour</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>SL Child</td>
+                <td>Peak hour</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </div>
+      
+
+
+           <!-----Duration----->
+
+           <div class="dropdown">
+            <select id="timeSlots"></select>
+          </div>
+   
+          
+      <h2 class="sectionkosgoda">
+        Summary Table
+    </h2>
+<br>
+
+
+<!-----Tables----->
+
+<table class="sumary-table">
+    
+    <tbody class="body-table">
+        <tr>
+            <td>Date</td>
+            <td><label id="selectedDateLabel"></label> <label id="monthYearLabel"></label></td>
+           
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td><label id="selectedTimeLabel"></label></td>
+            
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td><label id="dateTable"></label></td>
+          
+        </tr>
+        <tr>
+            <td>Ticket</td>
+            <td>Charges</td>
+            
+        </tr>
+        <tr>
+            <td><label id="fcount"></label> Foreign Adult</td>
+            <td><span id="value1" class="ffcount"></span></td>
+
+            <tr>
+              <td><label id="fccount"></label> Foreign Child</td>
+              <td><span id="value2" class="ffccount"></span></td>
+              
+          </tr>
+
+          <tr>
+            <td><label id="slacount"></label> SL Adult</td>
+            <td><span id="value3" class="sslacount"></span></td>
+            
+        </tr>
+
+        <tr>
+          <td><label id="slccount"></label> SL Child</td>
+          <td><span id="value4" class="sslccount"></span></td>
+          
+      </tr>
+
+       
+      <tr>
+        <td><label id="infantcount"></label> INFANT</td>
+        <td>Free</td>
+        
+    </tr>
+            
+        </tr>
+        <tr>
+            <td>Total Payble</td>
+            <td><label id="payble"></label></td>
+            
+        </tr>
+       
+    </tbody>
+</table>
+<form><a href="./details.html" class="btn7">Continue With Your Purchase</a></form>
+</div>
+
+<!-----Footer----->
+
+<footer>
+    <div class="footercategories4">
+      <br>
+          <br>
+        <div class="homesocial">
+          
+          <p class="foot_t">ALL RIGHTS RESERVED - DILSHAN HOPE</p>
+          <br>
+
+        </div>
+  <br>
+    <div class="footerbottom">
+      <p>&copy; Turtle Hatcheries 2023  Coventic &trade;</p>
+  </div>
+   </footer>
+
+   <script src="tickets.js"></script>
+
+</body>
+
+</html>
